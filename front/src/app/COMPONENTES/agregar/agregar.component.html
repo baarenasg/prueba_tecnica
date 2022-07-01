@@ -1,0 +1,35 @@
+<div class="container" style="margin-top: 10px">
+<div class="card">
+    <div class="card-header">
+        <h3>Formaulario productos</h3>
+    </div>
+
+    <form action="" style="margin: 10px">
+
+        <div class="form-group">
+            <label for="nombre">Nombre del producto</label>
+            <input class="form-control" type="text" name="nombre" id="nombre" [(ngModel)]="productoNuevo.nombre">
+        </div>
+    
+        <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <input class="form-control" type="text" name="tipo" id="tipo" [(ngModel)]="productoNuevo.tipo">
+        </div>
+        
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <input class="form-control" type="text" name="descripcion" id="descripcion" [(ngModel)]="productoNuevo.descripcion">
+        </div>
+    
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input class="form-control" type="text" name="precio" id="precio" [(ngModel)]="productoNuevo.precio"> 
+        </div>
+       
+        
+        <button class="btn btn-primary" style="margin-top: 10px" (click)="agregarProducto()">Guardar</button>
+    </form>
+    
+    </div>
+
+</div>
